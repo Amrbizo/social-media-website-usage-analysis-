@@ -1,10 +1,10 @@
-# social-media-website-usage-analysis-
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import random
 import numpy as np
-cat=['fashion', 'sports', 'memes', 'technology','music', 'culture', 'family','health']
+cat=['fashion', 'sports', 'memes', 'technology', 
+            'music', 'culture', 'family','health']
 
 
 # Generating the DataFrame
@@ -43,10 +43,7 @@ plt.boxplot(df['likes'])
 plt.xlabel('categories')
 plt.ylabel('likes')
 plt.title('boxplot of likes')
-
 # Show the plot
 plt.show()
 df.groupby('categories')['likes'].mean()
-
-            
 
